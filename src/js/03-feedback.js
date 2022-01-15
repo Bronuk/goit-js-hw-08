@@ -26,7 +26,7 @@ function saveInputValue(event){
     textToSave.message = refs.messageField.value
     
     localStorage.setItem('feedback-form-state', JSON.stringify(textToSave));
-    console.log('saved text is: ' + localStorage.getItem('feedback-form-state'));
+    // console.log('saved text is: ' + localStorage.getItem('feedback-form-state'));
 }
 
 function clickSubmitButton(event){
@@ -45,6 +45,9 @@ function fillInTextData(){
     refs.emailField.value = textFromLocalStorage['email'];
 }
 }
+
+
+
 // function getKeyByValue(object, value) {
 //     return Object.keys(object).find(key => object[key] === value);
 //   }
